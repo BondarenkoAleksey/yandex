@@ -18,10 +18,17 @@ class MainPage(BasePage):
         self.element_is_present(MainPageLocators.ALICE_ICON)
 
     def type_search_request(self):
-        search_input = self.element_is_present(MainPageLocators.SEARCH_INPUT)
-        search_input.click()
-        search_input.send_keys("почта")
+        self.type_text(MainPageLocators.SEARCH_INPUT, "почта")
 
-    def click_button(self):
-        search_button = self.element_is_present(MainPageLocators.SEARCH_BUTTON)
-        search_button.click()
+    def elements_are_present_after_type_search_word(self):
+        self.element_is_present(MainPageLocators.MARKET_BUTTON)
+        self.element_is_present(MainPageLocators.GAMES_BUTTON)
+        self.element_is_present(MainPageLocators.MAPS_BUTTON)
+        self.element_is_present(MainPageLocators.KINOPOISK_BUTTON)
+        self.element_is_present(MainPageLocators.TRANSLATE_BUTTON)
+        self.element_is_present(MainPageLocators.AUTORU_BUTTON)
+        self.element_is_present(MainPageLocators.TRAVEL_BUTTON)
+        self.element_is_present(MainPageLocators.ALL_SERVICES_BUTTON)
+        self.element_is_present(MainPageLocators.CLEAR_BUTTON)
+        self.element_is_present(MainPageLocators.SEARCH_BUTTON)
+

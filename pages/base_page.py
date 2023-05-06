@@ -22,6 +22,12 @@ class BasePage:
         return wait.until(EC.presence_of_element_located(locator),
                           message=f"Can't find element by locator {locator}")
 
+    def type_text(self, locator, text):
+        element = self.element_is_present(locator)
+        element.click()
+        element.clear()
+        element.send_keys(text)
+
     def find_elements(self, by, value):
         return self.find_elements(by, value)
 
