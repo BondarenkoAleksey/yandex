@@ -1,11 +1,5 @@
-from selenium import webdriver
-from selenium.common import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support import expected_conditions as EC
-
-# driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 
 class BasePage:
