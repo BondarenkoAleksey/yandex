@@ -25,5 +25,23 @@ class MainPageLocators:
     CLEAR_BUTTON = (By.CSS_SELECTOR, 'button[title="Очистить поисковый запрос"]')
     SEARCH_INPUT = (By.ID, "text")
 
+    ACCOUNT_MENU_BUTTON = (By.CSS_SELECTOR, '[data-svg="YandexIdRu"]')
+    CLOSE_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="close"]')
+    AUTH_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="auth"]')
+    MAIL_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="mail"]')
+    WRITE_MAIL_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="compose-mail"]')
+    FAVORITES_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="favorites"]')
+    GET_PLUS_BUTTON = (By.CSS_SELECTOR, '[data-testid="get-plus"]')
+    ACCOUNT_MANAGEMENT_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="passport"]')
+    MY_FEEDBACK_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="ugc"]')
+    SKIN_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="skin"]')
+    SETTINGS_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="tune"]')
+    SUPPORT_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="support"]')
+    LEGAL_RULES_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="legal-rules"]')
+    CONFIDENTIAL_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="confidential"]')
+    BLOG_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="blog"]')
+    ABOUT_COMPANY_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="company"]')
+
+
 
 
