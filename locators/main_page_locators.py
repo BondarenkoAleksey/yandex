@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 class MainPageLocators:
     LOGO = (By.CSS_SELECTOR, 'a[aria-label="Яндекс"]')
     ENTER_BUTTON = (By.CSS_SELECTOR, '[data-statlog="headline.enter"]')
-    BURGER_BUTTON = (By.CSS_SELECTOR, ".headline__personal-icon>svg")
+    BURGER_BUTTON = (By.CSS_SELECTOR, '[data-statlog="headline.menu"]>div>svg')
     VOICE_BUTTON = (By.CSS_SELECTOR, 'button[data-action="voice"]')
     CAMERA_BUTTON = (By.CSS_SELECTOR, '.search3__svg_camera')
     SEARCH_BUTTON = (By.CSS_SELECTOR, "button[type=submit]")
@@ -25,7 +25,7 @@ class MainPageLocators:
     CLEAR_BUTTON = (By.CSS_SELECTOR, 'button[title="Очистить поисковый запрос"]')
     SEARCH_INPUT = (By.ID, "text")
 
-    ACCOUNT_MENU_BUTTON = (By.CSS_SELECTOR, '[data-svg="YandexIdRu"]')
+    ACCOUNT_MENU_BUTTON = (By.XPATH, "//div[@data-svg='YandexIdRu']//*[name()='svg']")
     CLOSE_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="close"]')
     AUTH_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="auth"]')
     MAIL_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="mail"]')
@@ -41,6 +41,8 @@ class MainPageLocators:
     CONFIDENTIAL_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="confidential"]')
     BLOG_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="blog"]')
     ABOUT_COMPANY_MENU_BUTTON = (By.CSS_SELECTOR, '[data-testid="company"]')
+
+    FRAME_MENU = (By.CSS_SELECTOR, "iframe.usermenu-portal__iframe")
 
 
 
