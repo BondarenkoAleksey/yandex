@@ -12,13 +12,20 @@ class BasePage:
     def open(self):
         self.driver.get(self.url)
 
-    def element_is_present(self, locator, time=5):
+    def element_is_present(self, locator, time=25):
         wait = WebDriverWait(self.driver, time)
         return wait.until(EC.presence_of_element_located(locator),
                           message=f"Can't find element by locator {locator}")
 
     def execute_script(self, value):
         return self.driver.execute_script(value)
+
+    def switch_to_frame(self, *locator):
+        frame = self.driver.find_element(*locator)
+        self.driver.switch_to.frame(frame)
+
+    def switch_to_default_content(self):
+        self.driver.switch_to.default_content()
 
     def type_text(self, locator, text):
         element = self.element_is_present(locator)
