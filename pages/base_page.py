@@ -12,7 +12,7 @@ class BasePage:
     def open(self):
         self.driver.get(self.url)
 
-    def element_is_present(self, locator, time=25):
+    def element_is_present(self, locator, time=5):  # 25 для того, чтобы успевать вводить каптчу
         wait = WebDriverWait(self.driver, time)
         return wait.until(EC.presence_of_element_located(locator),
                           message=f"Can't find element by locator {locator}")

@@ -1,8 +1,16 @@
+from selenium.common import TimeoutException
+
 from pages.base_page import BasePage
 from locators.main_page_locators import MainPageLocators
 
 
 class MainPage(BasePage):
+
+    def accept_all(self):
+        try:
+            self.click_element(MainPageLocators.ACCEPT_ALL)
+        except TimeoutException:
+            print("\nБез показа модалки сохранения куки")
 
     def elements_are_present(self):
         self.element_is_present(MainPageLocators.LOGO)
@@ -58,3 +66,14 @@ class MainPage(BasePage):
         self.element_is_present(MainPageLocators.ALL_SERVICES_BUTTON)
         self.element_is_present(MainPageLocators.CLEAR_BUTTON)
         self.element_is_present(MainPageLocators.SEARCH_BUTTON)
+
+    def get_valid_title_of_buttons(self):
+        assert self.element_is_present(MainPageLocators.MARKET_BUTTON).text == "Маркет"
+        assert self.element_is_present(MainPageLocators.GAMES_BUTTON).text == "Игры"
+        assert self.element_is_present(MainPageLocators.MAPS_BUTTON).text == "Карты"
+        assert self.element_is_present(MainPageLocators.KINOPOISK_BUTTON).text == "Кинопоиск"
+        assert self.element_is_present(MainPageLocators.TRANSLATE_BUTTON).text == "Пе­ре­вод­чик"
+        assert self.element_is_present(MainPageLocators.AUTORU_BUTTON).text == "Авто.ру"
+        assert self.element_is_present(MainPageLocators.TRAVEL_BUTTON).text == "Пу­те­шест­вия"
+        assert self.element_is_present(MainPageLocators.ALL_SERVICES_BUTTON).text == "Все"
+
