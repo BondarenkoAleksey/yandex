@@ -12,7 +12,3 @@ class MarketPageLocators:
     CART_BUTTON = (By.CSS_SELECTOR, '[data-baobab-name="cart"]')
     LOGIN_BUTTON = (By.CSS_SELECTOR, '[data-zone-name="headerLoginButton"]')
 
-
-
-
-
