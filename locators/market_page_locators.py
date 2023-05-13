@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 
 
 class MarketPageLocators:
+    ACCEPT_ALL = (By.CSS_SELECTOR, '[data-id="button-all"]')
+
     LOGO = (By.CSS_SELECTOR, '[data-baobab-name="home"]')
     CATALOG_BUTTON = (By.CSS_SELECTOR, '[data-baobab-name="catalog"]')
     SEARCH_INPUT = (By.CSS_SELECTOR, '[data-zone-name="search-input"]')
