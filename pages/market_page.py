@@ -23,4 +23,7 @@ class MarketPage(BasePage):
         self.element_is_present(MarketPageLocators.CART_BUTTON)
         self.element_is_present(MarketPageLocators.LOGIN_BUTTON)
 
+        self.element_is_present(MarketPageLocators.LOCATION_BUTTON)
+        self.element_is_present(MarketPageLocators.BUY_AS_A_LEGAL_ENTITY_BUTTON)
+        self.element_is_present(MarketPageLocators.SELL_ON_MARKET_BUTTON)
 
