@@ -15,6 +15,7 @@ class MarketPageLocators:
     LOGIN_BUTTON = (By.CSS_SELECTOR, '[data-zone-name="headerLoginButton"]')
 
     LOCATION_BUTTON = (By.CSS_SELECTOR, '#hyperlocation-unified-dialog-anchor')
-    BUY_AS_A_LEGAL_ENTITY_BUTTON = (By.CSS_SELECTOR, '[data-zone-data="{\"id\":\"116001386\"}"]')
-    SELL_ON_MARKET_BUTTON = (By.CSS_SELECTOR, '[data-zone-data="{\"id\":\"97017544\"}"]')
+    BUY_AS_A_LEGAL_ENTITY_BUTTON = (By.CSS_SELECTOR,
+                                    "a[href='https://business.market.yandex.ru/pokupayte-dlya-biznesa']")
+    SELL_ON_MARKET_BUTTON = (By.XPATH, "//span[contains(text(),'Продавайте на Маркете')]")
 
