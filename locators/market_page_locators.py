@@ -27,3 +27,12 @@ class MarketPageLocators:
     ABOUT_THE_SERVICE_FOOTER = (By.XPATH, "//a[contains(text(),'О сервисе')]")
     PARTICIPATION_IN_RESEARCH_FOOTER = (By.XPATH, "//a[contains(text(),'Участие в исследованиях')]")
     RETURNS_FOOTER = (By.XPATH, "//a[contains(text(),'Возвраты')]")
+
+    #to sellers
+    SELLERS_PERSONAL_OFFICE_FOOTER = (By.XPATH, "//a[contains(text(),'Личный кабинет продавца')]")
+    SELL_ON_MARKET_FOOTER = (By.XPATH, "//a[contains(text(),'Продавайте на Маркете')]")
+    DOCUMENTATION_FOR_PARTNERS_FOOTER = (By.XPATH, "//a[contains(text(),'Документация для партнёров')]")
+    SITE_FOR_PARTNERS_FOOTER = (By.XPATH, "//a[contains(text(),'Сайт для партнёров')]")
+
+
+
