@@ -34,5 +34,11 @@ class MarketPageLocators:
     DOCUMENTATION_FOR_PARTNERS_FOOTER = (By.XPATH, "//a[contains(text(),'Документация для партнёров')]")
     SITE_FOR_PARTNERS_FOOTER = (By.XPATH, "//a[contains(text(),'Сайт для партнёров')]")
 
-
+    #cooperation
+    COMPANYS_NEWS_FOOTER = (By.XPATH, "//a[contains(text(),'Новости компании')]")
+    AFFILIATE_PROGRAM_FOOTER = (By.XPATH, "//a[contains(text(),'Партнёрская программа')]")
+    PROGRAM_FOR_BLOGGERS_FOOTER = (By.XPATH, "//a[contains(text(),'Программа для блогеров')]")
+    FOR_MANUFACTURERS_FOOTER = (By.XPATH, "//a[contains(text(),'Производителям')]")
+    POINT_OF_ISSUANCE_OF_ORDERS_FOOTER = (By.XPATH, "//a[contains(text(),'Пункт выдачи заказов')]")
+    MARKET_HIRING_FOOTER = (By.XPATH, "//a[contains(text(),'Маркет нанимает')]")
 
