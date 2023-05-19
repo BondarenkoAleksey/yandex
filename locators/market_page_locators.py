@@ -42,3 +42,6 @@ class MarketPageLocators:
     POINT_OF_ISSUANCE_OF_ORDERS_FOOTER = (By.XPATH, "//a[contains(text(),'Пункт выдачи заказов')]")
     MARKET_HIRING_FOOTER = (By.XPATH, "//a[contains(text(),'Маркет нанимает')]")
 
+    MOBILE_VERSION_FOOTER = (By.XPATH, "//a[contains(text(),'Мобильная версия')]")
+    STATISTICS_FOOTER = (By.XPATH, "//a[contains(text(),'Статистика')]")
+    TERMS_OF_USE_FOOTER = (By.XPATH, "//a[contains(text(),'Пользовательское соглашение')]")
