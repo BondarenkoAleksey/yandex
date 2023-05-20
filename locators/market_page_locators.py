@@ -45,3 +45,5 @@ class MarketPageLocators:
     MOBILE_VERSION_FOOTER = (By.XPATH, "//a[contains(text(),'Мобильная версия')]")
     STATISTICS_FOOTER = (By.XPATH, "//a[contains(text(),'Статистика')]")
     TERMS_OF_USE_FOOTER = (By.XPATH, "//a[contains(text(),'Пользовательское соглашение')]")
+
+    ADVISER_FOOTER = (By.CSS_SELECTOR, ".APMq7")
